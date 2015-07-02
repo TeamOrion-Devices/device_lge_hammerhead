@@ -1,6 +1,6 @@
 /**
  * @file     morpho_get_image_size.h
- * @brief    ‰æ‘œ‚É•K—v‚Èƒƒ‚ƒŠƒTƒCƒY‚ğæ“¾‚·‚éŠÖ”
+ * @brief    ï¿½æ‘œï¿½É•Kï¿½vï¿½Èƒï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Tï¿½Cï¿½Yï¿½ï¿½ï¿½æ“¾ï¿½ï¿½ï¿½ï¿½ï¿½Öï¿½
  * @version  1.0.0
  * @date     2008-07-01
  *
@@ -17,12 +17,12 @@ extern "C" {
 #endif
 
 /**
- * •‚Æ‚‚³‚ÆƒtƒH[ƒ}ƒbƒg–¼‚©‚çA‰æ‘œ‚ğŠi”[‚·‚é‚Ì‚É•K—v‚Èƒƒ‚ƒŠƒTƒCƒY‚ğ“¾‚é.
+ * ï¿½ï¿½ï¿½Æï¿½ï¿½ï¿½ï¿½Æƒtï¿½Hï¿½[ï¿½}ï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½æ‘œï¿½ï¿½ï¿½iï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Ì‚É•Kï¿½vï¿½Èƒï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Tï¿½Cï¿½Yï¿½ğ“¾‚ï¿½.
  *
- * @param width       •
- * @param height      ‚‚³
- * @param p_format    ‰æ‘œƒtƒH[ƒ}ƒbƒg•¶š—ñ
- * @return            ‰æ‘œ‚É•K—v‚Èƒƒ‚ƒŠƒTƒCƒY
+ * @param width       ï¿½ï¿½
+ * @param height      ï¿½ï¿½ï¿½ï¿½
+ * @param p_format    ï¿½æ‘œï¿½tï¿½Hï¿½[ï¿½}ï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @return            ï¿½æ‘œï¿½É•Kï¿½vï¿½Èƒï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Tï¿½Cï¿½Y
  */
 #define morpho_getImageSize mor_noise_reduction_IF_getImageSize
 
@@ -30,12 +30,12 @@ MORPHO_API(int)
 morpho_getImageSize(int width, int height, const char *p_format);
 
 /**
- * Y‰æ‘œƒf[ƒ^ƒTƒCƒY‚ğæ“¾.
+ * Yï¿½æ‘œï¿½fï¿½[ï¿½^ï¿½Tï¿½Cï¿½Yï¿½ï¿½ï¿½æ“¾.
  *
- * @param width       •
- * @param height      ‚‚³
- * @param p_format    ‰æ‘œƒtƒH[ƒ}ƒbƒg•¶š—ñ
- * @return            Y‰æ‘œƒf[ƒ^ƒTƒCƒY
+ * @param width       ï¿½ï¿½
+ * @param height      ï¿½ï¿½ï¿½ï¿½
+ * @param p_format    ï¿½æ‘œï¿½tï¿½Hï¿½[ï¿½}ï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @return            Yï¿½æ‘œï¿½fï¿½[ï¿½^ï¿½Tï¿½Cï¿½Y
  */
 #define morpho_getImageSizeY mor_noise_reduction_IF_getImageSizeY
 
@@ -43,12 +43,12 @@ MORPHO_API(int)
 morpho_getImageSizeY(int width, int height, const char *p_format);
 
 /**
- * U‰æ‘œƒf[ƒ^ƒTƒCƒY‚ğæ“¾.
+ * Uï¿½æ‘œï¿½fï¿½[ï¿½^ï¿½Tï¿½Cï¿½Yï¿½ï¿½ï¿½æ“¾.
  *
- * @param width       •
- * @param height      ‚‚³
- * @param p_format    ‰æ‘œƒtƒH[ƒ}ƒbƒg•¶š—ñ
- * @return            U‰æ‘œƒf[ƒ^ƒTƒCƒY
+ * @param width       ï¿½ï¿½
+ * @param height      ï¿½ï¿½ï¿½ï¿½
+ * @param p_format    ï¿½æ‘œï¿½tï¿½Hï¿½[ï¿½}ï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @return            Uï¿½æ‘œï¿½fï¿½[ï¿½^ï¿½Tï¿½Cï¿½Y
  */
 #define morpho_getImageSizeU mor_noise_reduction_IF_getImageSizeU
 
@@ -56,12 +56,12 @@ MORPHO_API(int)
 morpho_getImageSizeU(int width, int height, const char *p_format);
 
 /**
- * V‰æ‘œƒf[ƒ^ƒTƒCƒY‚ğæ“¾.
+ * Vï¿½æ‘œï¿½fï¿½[ï¿½^ï¿½Tï¿½Cï¿½Yï¿½ï¿½ï¿½æ“¾.
  *
- * @param width       •
- * @param height      ‚‚³
- * @param p_format    ‰æ‘œƒtƒH[ƒ}ƒbƒg•¶š—ñ
- * @return            V‰æ‘œƒf[ƒ^ƒTƒCƒY
+ * @param width       ï¿½ï¿½
+ * @param height      ï¿½ï¿½ï¿½ï¿½
+ * @param p_format    ï¿½æ‘œï¿½tï¿½Hï¿½[ï¿½}ï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @return            Vï¿½æ‘œï¿½fï¿½[ï¿½^ï¿½Tï¿½Cï¿½Y
  */
 #define morpho_getImageSizeV mor_noise_reduction_IF_getImageSizeV
 
@@ -69,12 +69,12 @@ MORPHO_API(int)
 morpho_getImageSizeV(int width, int height, const char *p_format);
 
 /**
- * UV‰æ‘œƒf[ƒ^ƒTƒCƒY‚ğæ“¾.
+ * UVï¿½æ‘œï¿½fï¿½[ï¿½^ï¿½Tï¿½Cï¿½Yï¿½ï¿½ï¿½æ“¾.
  *
- * @param width       •
- * @param height      ‚‚³
- * @param p_format    ‰æ‘œƒtƒH[ƒ}ƒbƒg•¶š—ñ
- * @return            UV‰æ‘œƒf[ƒ^ƒTƒCƒY
+ * @param width       ï¿½ï¿½
+ * @param height      ï¿½ï¿½ï¿½ï¿½
+ * @param p_format    ï¿½æ‘œï¿½tï¿½Hï¿½[ï¿½}ï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @return            UVï¿½æ‘œï¿½fï¿½[ï¿½^ï¿½Tï¿½Cï¿½Y
  */
 #define morpho_getImageSizeUV mor_noise_reduction_IF_getImageSizeUV
 

@@ -1,6 +1,6 @@
 /**
  * @file     morpho_api.h
- * @brief    APIŠÖ”’è‹`‚Ìƒ}ƒNƒ
+ * @brief    APIï¿½Öï¿½ï¿½ï¿½ï¿½`ï¿½Ìƒ}ï¿½Nï¿½ï¿½
  * @version  1.0.0
  * @date     Tue Sep 21 17:37:35 2010
  *
@@ -11,8 +11,8 @@
 #define MORPHO_API_H
 
 /** 
- * APIŠÖ”‚ð’è‹`‚·‚é‚Æ‚«‚ÉŽg—p.
- * Windows‚ÅDLL‚ðì¬‚·‚éÛ“™‚É‘‚«Š·‚¦‚é‚±‚Æ‚ÅØ‚è‘Ö‚¦‰Â”\
+ * APIï¿½Öï¿½ï¿½ï¿½ï¿½ï¿½ï¿½`ï¿½ï¿½ï¿½ï¿½ï¿½Æ‚ï¿½ï¿½ÉŽgï¿½p.
+ * Windowsï¿½ï¿½DLLï¿½ï¿½ï¿½ì¬ï¿½ï¿½ï¿½ï¿½ï¿½Û“ï¿½ï¿½Éï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½é‚±ï¿½Æ‚ÅØ‚ï¿½ï¿½Ö‚ï¿½ï¿½Â”\
  */
 #if defined(MORPHO_DLL) && defined(_WIN32)
 #define MORPHO_API(type) __declspec(dllexport) extern type

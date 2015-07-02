@@ -1,6 +1,6 @@
 /**
  * @file     morpho_rect_int.h
- * @brief    ‹éŒ`ƒf[ƒ^‚Ì\‘¢‘Ì’è‹`
+ * @brief    ï¿½ï¿½ï¿½`ï¿½fï¿½[ï¿½^ï¿½Ì\ï¿½ï¿½ï¿½Ì’ï¿½ï¿½`
  * @version  1.0.0
  * @date     2008-06-09
  *
@@ -14,7 +14,7 @@
 extern "C" {
 #endif
 
-/** ‹éŒ`ƒf[ƒ^. */
+/** ï¿½ï¿½ï¿½`ï¿½fï¿½[ï¿½^. */
 typedef struct {
     int sx; /**< left */
     int sy; /**< top */
@@ -22,7 +22,7 @@ typedef struct {
     int ey; /**< bottom */
 } morpho_RectInt;
 
-/** ‹éŒ`—Ìˆæ rect ‚Ì¶ãÀ•W (l,t) ‚Æ‰E‰ºÀ•W (r,b) ‚ğİ’è‚·‚é. */
+/** ï¿½ï¿½ï¿½`ï¿½Ìˆï¿½ rect ï¿½Ìï¿½ï¿½ï¿½ï¿½ï¿½W (l,t) ï¿½Æ‰Eï¿½ï¿½ï¿½ï¿½W (r,b) ï¿½ï¿½ï¿½İ’è‚·ï¿½ï¿½. */
 #define morpho_RectInt_setRect(rect,l,t,r,b) do { \
 	(rect)->sx=(l);\
 	(rect)->sy=(t);\

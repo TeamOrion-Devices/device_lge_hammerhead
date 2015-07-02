@@ -1,6 +1,6 @@
 /*******************************************************************
  * morpho_easy_hdr.h
- * [CP932/CRLF] { ‚  •„Ќ†‰»•ыЋ®Ћ©“®”»’и—p }
+ * [CP932/CRLF] { пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅp }
  *------------------------------------------------------------------
  * Copyright (C) 2010-2012 Morpho,Inc.
  *******************************************************************/
@@ -105,13 +105,13 @@ typedef struct _morpho_EasyHDR_Callback morpho_EasyHDR_Callback;
 /** EasyHDR */
 struct _morpho_EasyHDR
 {
-    void *p; /**< “а•”Ќ\‘ў‘М‚Ц‚Мѓ|ѓCѓ“ѓ^ */
+    void *p; /**< пїЅпїЅпїЅ\пїЅпїЅпїЅМ‚Ц‚Мѓ|пїЅCпїЅпїЅпїЅ^ */
 };
 
 /** EasyHDR Callback (for multi-thread processing) */
 struct _morpho_EasyHDR_Callback
 {
-    void *p; /**< ѓRЃ[ѓ‹ѓoѓbѓNЉЦђ”‚М‘ж€к€шђ”‚Ж‚µ‚Д“n‚і‚к‚й’l */
+    void *p; /**< пїЅRпїЅ[пїЅпїЅпїЅoпїЅbпїЅNпїЅЦђпїЅпїЅМ‘пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅЖ‚пїЅпїЅД“nпїЅпїЅпїЅпїЅпїЅпїЅпїЅl */
 
     void * (* thread_create )(void *p, int index, void *(*start_routine)(void *arg), void *arg);
     int    (* thread_destroy)(void *p, void *thread);
@@ -140,9 +140,9 @@ extern "C"
 /*-----------------------------------------------------------------*/
 
 /**
- * ѓoЃ[ѓWѓ‡ѓ“•¶Ћљ—с‚рЋж“ѕ
+ * пїЅoпїЅ[пїЅWпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅж“ѕ
  *
- * @return ѓoЃ[ѓWѓ‡ѓ“•¶Ћљ—с(MORPHO_EASY_HDR_VER)
+ * @return пїЅoпїЅ[пїЅWпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ(MORPHO_EASY_HDR_VER)
  */
 MORPHO_API(char const *)
 morpho_EasyHDR_getVersion(void);
@@ -150,13 +150,13 @@ morpho_EasyHDR_getVersion(void);
 /*-----------------------------------------------------------------*/
 
 /**
- * •K—v‚ИѓЃѓ‚ѓЉѓTѓCѓY‚рЋж“ѕ
+ * пїЅKпїЅvпїЅИѓпїЅпїЅпїЅпїЅпїЅпїЅTпїЅCпїЅYпїЅпїЅпїЅж“ѕ
  *
- * @param[in]  max_width   “ь—Н‰ж‘њ‚МЌЕ‘е•ќ
- * @param[in]  max_height  “ь—Н‰ж‘њ‚МЌЕ‘еЌ‚‚і
- * @param[in]  format      ‰ж‘њѓtѓHЃ[ѓ}ѓbѓg•¶Ћљ—с
+ * @param[in]  max_width   пїЅпїЅпїЅН‰ж‘њпїЅМЌЕ‘е•ќ
+ * @param[in]  max_height  пїЅпїЅпїЅН‰ж‘њпїЅМЌЕ‘еЌ‚пїЅпїЅ
+ * @param[in]  format      пїЅж‘њпїЅtпїЅHпїЅ[пїЅ}пїЅbпїЅgпїЅпїЅпїЅпїЅпїЅпїЅ
  *
- * @return •K—v‚ИѓЃѓ‚ѓЉѓTѓCѓY(byte)
+ * @return пїЅKпїЅvпїЅИѓпїЅпїЅпїЅпїЅпїЅпїЅTпїЅCпїЅY(byte)
  */
 MORPHO_API(int)
 morpho_EasyHDR_getBufferSize(
@@ -165,28 +165,28 @@ morpho_EasyHDR_getBufferSize(
     char const *format);
 
 /**
- * Џ‰Љъ‰»
+ * пїЅпїЅпїЅпїЅпїЅпїЅ
  *
- * Ћg—pѓXѓЊѓbѓhђ”‚Й0€И‰є‚М’l‚рђЭ’и‚µ‚ЅЏкЌ‡ЃA
- * •ЄЉ„ЋАЌs‚рЌs‚¤ЃB
+ * пїЅgпїЅpпїЅXпїЅпїЅпїЅbпїЅhпїЅпїЅпїЅпїЅ0пїЅИ‰пїЅпїЅМ’lпїЅпїЅпїЅЭ’и‚µпїЅпїЅпїЅкЌ‡пїЅA
+ * пїЅпїЅпїЅпїЅпїЅпїЅsпїЅпїЅпїЅsпїЅпїЅпїЅB
  *
- * Ћg—pѓXѓЊѓbѓhђ”‚Й1€ИЏг‚М’l‚рђЭ’и‚µ‚ЅЏкЌ‡ЃA
- * €кЉ‡ЋАЌs‚рЌs‚¤ЃB
+ * пїЅgпїЅpпїЅXпїЅпїЅпїЅbпїЅhпїЅпїЅпїЅпїЅ1пїЅИЏпїЅпїЅМ’lпїЅпїЅпїЅЭ’и‚µпїЅпїЅпїЅкЌ‡пїЅA
+ * пїЅкЉ‡пїЅпїЅsпїЅпїЅпїЅsпїЅпїЅпїЅB
  *
- * Ћg—pѓXѓЊѓbѓhђ”‚Й2€ИЏг‚М’l‚рђЭ’и‚µ‚ЅЏкЌ‡ЃA
- * ѓ}ѓ‹ѓ`ѓXѓЊѓbѓh‚Й‚ж‚й•А—сЋАЌs(€кЉ‡ЋАЌs)‚рЌs‚¤ЃB
- * callback ‚Й“KђШ‚И’l‚рђЭ’и‚·‚й•K—v‚ ‚иЃB
+ * пїЅgпїЅpпїЅXпїЅпїЅпїЅbпїЅhпїЅпїЅпїЅпїЅ2пїЅИЏпїЅпїЅМ’lпїЅпїЅпїЅЭ’и‚µпїЅпїЅпїЅкЌ‡пїЅA
+ * пїЅ}пїЅпїЅпїЅ`пїЅXпїЅпїЅпїЅbпїЅhпїЅЙ‚пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅs(пїЅкЉ‡пїЅпїЅs)пїЅпїЅпїЅsпїЅпїЅпїЅB
+ * callback пїЅЙ“KпїЅШ‚И’lпїЅпїЅпїЅЭ’и‚·пїЅпїЅпїЅKпїЅvпїЅпїЅпїЅпїЅпїЅB
  *
- * ЃyЋАЌsЏу‘Ф‚М‘J€ЪЃz
- *     ?_UNKNOWN ЃЁ 0_INITIALIZED
+ * пїЅyпїЅпїЅsпїЅпїЅпїЅФ‚М‘JпїЅЪЃz
+ *     ?_UNKNOWN пїЅпїЅ 0_INITIALIZED
  *
- * @param[in,out]  p            EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[out]     buffer       EasyHDR‚ЙЉ„‚и“–‚Д‚йѓЃѓ‚ѓЉ‚Ц‚Мѓ|ѓCѓ“ѓ^
- * @param[in]      buffer_size  EasyHDR‚ЙЉ„‚и“–‚Д‚йѓЃѓ‚ѓЉ‚МѓTѓCѓY
- * @param[in]      nthreads     Ћg—pѓXѓЊѓbѓhђ” (ѓRѓAђ”)
- * @param[in]      callback     ѓRЃ[ѓ‹ѓoѓbѓNЉЦђ”ЊQ
+ * @param[in,out]  p            EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[out]     buffer       EasyHDRпїЅЙЉпїЅпїЅи“–пїЅД‚йѓЃпїЅпїЅпїЅпїЅпїЅЦ‚Мѓ|пїЅCпїЅпїЅпїЅ^
+ * @param[in]      buffer_size  EasyHDRпїЅЙЉпїЅпїЅи“–пїЅД‚йѓЃпїЅпїЅпїЅпїЅпїЅМѓTпїЅCпїЅY
+ * @param[in]      nthreads     пїЅgпїЅpпїЅXпїЅпїЅпїЅbпїЅhпїЅпїЅ (пїЅRпїЅAпїЅпїЅ)
+ * @param[in]      callback     пїЅRпїЅ[пїЅпїЅпїЅoпїЅbпїЅNпїЅЦђпїЅпїЅQ
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_initialize(
@@ -197,12 +197,12 @@ morpho_EasyHDR_initialize(
     morpho_EasyHDR_Callback const *callback);
 
 /**
- * ѓNѓЉЃ[ѓ“ѓAѓbѓv
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅNпїЅпїЅпїЅ[пїЅпїЅпїЅAпїЅbпїЅv
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p  EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
+ * @param[in,out]  p  EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_finalize(
@@ -211,23 +211,23 @@ morpho_EasyHDR_finalize(
 /*-----------------------------------------------------------------*/
 
 /**
- * Ќ‡ђ¬‚МЉJЋnЃEЋАЌs
- * setImageFormat() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅпїЅпїЅпїЅпїЅМЉJпїЅnпїЅEпїЅпїЅs
+ * setImageFormat() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * ЃyЋАЌsЏу‘Ф‚М‘J€Ъ (€кЉ‡ЋАЌsЋћ)Ѓz
- *     0_INITIALIZED ЃЁ (1_PROCESSING) ЃЁ 0_INITIALIZED (Џ€—ќЉ®—№)
- *                                     ЃЁ 2_SUSPENDED   (suspend()ЊД‚СЏo‚µ)
+ * пїЅyпїЅпїЅsпїЅпїЅпїЅФ‚М‘JпїЅпїЅ (пїЅкЉ‡пїЅпїЅsпїЅпїЅ)пїЅz
+ *     0_INITIALIZED пїЅпїЅ (1_PROCESSING) пїЅпїЅ 0_INITIALIZED (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+ *                                     пїЅпїЅ 2_SUSPENDED   (suspend()пїЅД‚СЏoпїЅпїЅ)
  *
- * ЃyЋАЌsЏу‘Ф‚М‘J€Ъ (•ЄЉ„ЋАЌsЋћ)Ѓz
- *     0_INITIALIZED ЃЁ 3_PAUSED      (Џ€—ќ’†)
- *                   ЃЁ 0_INITIALIZED (Џ€—ќЉ®—№)
+ * пїЅyпїЅпїЅsпїЅпїЅпїЅФ‚М‘JпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅsпїЅпїЅ)пїЅz
+ *     0_INITIALIZED пїЅпїЅ 3_PAUSED      (пїЅпїЅпїЅпїЅпїЅпїЅ)
+ *                   пїЅпїЅ 0_INITIALIZED (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
  *
- * @param[in,out]  p             EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[out]     output_image  Њ‹‰К‰ж‘њ (Ѓu1–‡–ЪЃv‚М“ь—Н‰ж‘њ‚рЋw’и‰В”\)
- * @param[in,out]  input_images  “ь—Н‰ж‘њЊQ (ѓGѓ“ѓWѓ“‚Й‚ж‚Б‚ДЏ‘‚«Љ·‚¦‚з‚к‚й)
- * @param[in]      nimages       “ь—Н‰ж‘њ‚Мђ”
+ * @param[in,out]  p             EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[out]     output_image  пїЅпїЅпїЅК‰ж‘њ (пїЅu1пїЅпїЅпїЅЪЃvпїЅМ“пїЅпїЅН‰ж‘њпїЅпїЅпїЅwпїЅпїЅпїЅВ”\)
+ * @param[in,out]  input_images  пїЅпїЅпїЅН‰ж‘њпїЅQ (пїЅGпїЅпїЅпїЅWпїЅпїЅпїЅЙ‚пїЅпїЅпїЅДЏпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+ * @param[in]      nimages       пїЅпїЅпїЅН‰ж‘њпїЅМђпїЅ
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_merge(
@@ -239,19 +239,19 @@ morpho_EasyHDR_merge(
 /*-----------------------------------------------------------------*/
 
 /**
- * Ќ‡ђ¬‚МЊp‘±ЋАЌs
+ * пїЅпїЅпїЅпїЅпїЅМЊpпїЅпїЅпїЅпїЅs
  *
- * merge() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * merge() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * •ЄЉ„ЋАЌsЋћ(initialize() ‚Е nthreads ‚Й 0 ‚рЋw’и‚µ‚Ѕ‚Ж‚«)‚М‚Э—LЊш
+ * пїЅпїЅпїЅпїЅпїЅпїЅsпїЅпїЅ(initialize() пїЅпїЅ nthreads пїЅпїЅ 0 пїЅпїЅпїЅwпїЅи‚µпїЅпїЅпїЅЖ‚пїЅ)пїЅМ‚Э—LпїЅпїЅ
  *
- * ЃyЋАЌsЏу‘Ф‚М‘J€Ъ (•ЄЉ„ЋАЌsЋћ)Ѓz
- *     3_PAUSED ЃЁ 3_PAUSED      (Џ€—ќ’†)
- *              ЃЁ 0_INITIALIZED (Џ€—ќЉ®—№)
+ * пїЅyпїЅпїЅsпїЅпїЅпїЅФ‚М‘JпїЅпїЅ (пїЅпїЅпїЅпїЅпїЅпїЅsпїЅпїЅ)пїЅz
+ *     3_PAUSED пїЅпїЅ 3_PAUSED      (пїЅпїЅпїЅпїЅпїЅпїЅ)
+ *              пїЅпїЅ 0_INITIALIZED (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
  *
- * @param[in,out]  p  EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
+ * @param[in,out]  p  EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_process(
@@ -260,31 +260,31 @@ morpho_EasyHDR_process(
 /*-----------------------------------------------------------------*/
 
 /**
- * Ќ‡ђ¬‚М’†’f (•КѓRѓ“ѓeѓLѓXѓg‚©‚з‚МЊД‚СЏo‚µ‚Й‚ж‚й)
- * merge() ЋАЌs’†‚ЙЋАЌs‰В”\
+ * пїЅпїЅпїЅпїЅпїЅМ’пїЅпїЅf (пїЅКѓRпїЅпїЅпїЅeпїЅLпїЅXпїЅgпїЅпїЅпїЅпїЅпїЅМЊД‚СЏoпїЅпїЅпїЅЙ‚пїЅпїЅпїЅ)
+ * merge() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * ЃyЋАЌsЏу‘Ф‚М‘J€Ъ (€кЉ‡ЋАЌsЋћ)Ѓz
- *     1_PROCESSING ЃЁ 2_SUSPENDED
+ * пїЅyпїЅпїЅsпїЅпїЅпїЅФ‚М‘JпїЅпїЅ (пїЅкЉ‡пїЅпїЅsпїЅпїЅ)пїЅz
+ *     1_PROCESSING пїЅпїЅ 2_SUSPENDED
  *
- * @param[in,out]  p  EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
+ * @param[in,out]  p  EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_suspend(
     morpho_EasyHDR *p);
 
 /**
- * Ќ‡ђ¬‚МЌДЉJ
- * suspend() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅпїЅпїЅпїЅпїЅМЌДЉJ
+ * suspend() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * ЃyЋАЌsЏу‘Ф‚М‘J€Ъ (€кЉ‡ЋАЌsЋћ)Ѓz
- *     2_SUSPENDED ЃЁ (1_PROCESSING) ЃЁ 0_INITIALIZED (Џ€—ќЉ®—№)
- *                                   ЃЁ 2_SUSPENDED   (suspend()ЊД‚СЏo‚µ)
+ * пїЅyпїЅпїЅsпїЅпїЅпїЅФ‚М‘JпїЅпїЅ (пїЅкЉ‡пїЅпїЅsпїЅпїЅ)пїЅz
+ *     2_SUSPENDED пїЅпїЅ (1_PROCESSING) пїЅпїЅ 0_INITIALIZED (пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ)
+ *                                   пїЅпїЅ 2_SUSPENDED   (suspend()пїЅД‚СЏoпїЅпїЅ)
  *
- * @param[in,out]  p  EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
+ * @param[in,out]  p  EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_resume(
@@ -293,13 +293,13 @@ morpho_EasyHDR_resume(
 /*-----------------------------------------------------------------*/
 
 /**
- * ‰ж‘њѓtѓHЃ[ѓ}ѓbѓg‚МђЭ’и
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅж‘њпїЅtпїЅHпїЅ[пїЅ}пїЅbпїЅgпїЅМђЭ’пїЅ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p       EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[in]      format  ‰ж‘њѓtѓHЃ[ѓ}ѓbѓg‚р‚ ‚з‚н‚·•¶Ћљ—с
+ * @param[in,out]  p       EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[in]      format  пїЅж‘њпїЅtпїЅHпїЅ[пїЅ}пїЅbпїЅgпїЅпїЅпїЅпїЅн‚·пїЅпїЅпїЅпїЅпїЅпїЅ
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_setImageFormat(
@@ -307,14 +307,14 @@ morpho_EasyHDR_setImageFormat(
     char const *format);
 
 /**
- * ‰ж‘њѓtѓHЃ[ѓ}ѓbѓg‚МЋж“ѕ
- * setImageFormat() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅж‘њпїЅtпїЅHпїЅ[пїЅ}пїЅbпїЅgпїЅМЋж“ѕ
+ * setImageFormat() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p            EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[out]     buffer       ‰ж‘њѓtѓHЃ[ѓ}ѓbѓg‚р‚ ‚з‚н‚·•¶Ћљ—с‚ЄЉi”[‚і‚к‚йѓoѓbѓtѓ@
- * @param[in]      buffer_size  ѓoѓbѓtѓ@‚МѓTѓCѓY(ЏI’[•¶ЋљЉЬ‚Ю)
+ * @param[in,out]  p            EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[out]     buffer       пїЅж‘њпїЅtпїЅHпїЅ[пїЅ}пїЅbпїЅgпїЅпїЅпїЅпїЅн‚·пїЅпїЅпїЅпїЅпїЅс‚ЄЉiпїЅ[пїЅпїЅпїЅпїЅпїЅпїЅпїЅoпїЅbпїЅtпїЅ@
+ * @param[in]      buffer_size  пїЅoпїЅbпїЅtпїЅ@пїЅМѓTпїЅCпїЅY(пїЅIпїЅ[пїЅпїЅпїЅпїЅпїЅЬ‚пїЅ)
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_getImageFormat(
@@ -325,17 +325,17 @@ morpho_EasyHDR_getImageFormat(
 /*-----------------------------------------------------------------*/
 
 /**
- * €К’uЌ‡‚н‚№(Ћи‚Ф‚к•вђі)‚М—L–і‚МђЭ’и
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅК’uпїЅпїЅпїЅн‚№(пїЅпїЅпїЅФ‚пїЅпїЅвђі)пїЅМ—LпїЅпїЅпїЅМђЭ’пїЅ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
  * value:
- *   MOR_EASY_HDR_ENABLED  : €К’uЌ‡‚н‚№‚ ‚и
- *   MOR_EASY_HDR_DISABLED : €К’uЌ‡‚н‚№‚И‚µ
+ *   MOR_EASY_HDR_ENABLED  : пїЅК’uпїЅпїЅпїЅн‚№пїЅпїЅпїЅпїЅ
+ *   MOR_EASY_HDR_DISABLED : пїЅК’uпїЅпїЅпїЅн‚№пїЅИ‚пїЅ
  *
- * @param[in,out]  p      EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[in]      value  ђЭ’и’l
+ * @param[in,out]  p      EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[in]      value  пїЅЭ’пїЅпїЅl
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_setImageAlignmentStatus(
@@ -343,13 +343,13 @@ morpho_EasyHDR_setImageAlignmentStatus(
     int value);
 
 /**
- * €К’uЌ‡‚н‚№(Ћи‚Ф‚к•вђі)‚М—L–і‚МЋж“ѕ
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅК’uпїЅпїЅпїЅн‚№(пїЅпїЅпїЅФ‚пїЅпїЅвђі)пїЅМ—LпїЅпїЅпїЅМЋж“ѕ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p      EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[out]     value  ђЭ’и’lЉi”[ђж
+ * @param[in,out]  p      EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[out]     value  пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_getImageAlignmentStatus(
@@ -359,17 +359,17 @@ morpho_EasyHDR_getImageAlignmentStatus(
 /*-----------------------------------------------------------------*/
 
 /**
- * ѓSЃ[ѓXѓgЏњ‹Ћ(”нЋК‘М‚Ф‚к•вђі)‚М—L–і‚МђЭ’и
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅSпїЅ[пїЅXпїЅgпїЅпїЅпїЅпїЅ(пїЅпїЅпїЅК‘М‚Ф‚пїЅпїЅвђі)пїЅМ—LпїЅпїЅпїЅМђЭ’пїЅ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
  * value:
- *   MOR_EASY_HDR_ENABLED  : ѓSЃ[ѓXѓgЏњ‹Ћ‚ ‚и
- *   MOR_EASY_HDR_DISABLED : ѓSЃ[ѓXѓgЏњ‹Ћ‚И‚µ
+ *   MOR_EASY_HDR_ENABLED  : пїЅSпїЅ[пїЅXпїЅgпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+ *   MOR_EASY_HDR_DISABLED : пїЅSпїЅ[пїЅXпїЅgпїЅпїЅпїЅпїЅпїЅИ‚пїЅ
  *
- * @param[in,out]  p      EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[in]      value  ђЭ’и’l
+ * @param[in,out]  p      EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[in]      value  пїЅЭ’пїЅпїЅl
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_setGhostRemovalStatus(
@@ -377,13 +377,13 @@ morpho_EasyHDR_setGhostRemovalStatus(
     int value);
 
 /**
- * ѓSЃ[ѓXѓgЏњ‹Ћ(”нЋК‘М‚Ф‚к•вђі)‚М—L–і‚МЋж“ѕ
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅSпїЅ[пїЅXпїЅgпїЅпїЅпїЅпїЅ(пїЅпїЅпїЅК‘М‚Ф‚пїЅпїЅвђі)пїЅМ—LпїЅпїЅпїЅМЋж“ѕ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p      EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[out]     value  ђЭ’и’lЉi”[ђж
+ * @param[in,out]  p      EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[out]     value  пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_getGhostRemovalStatus(
@@ -393,17 +393,17 @@ morpho_EasyHDR_getGhostRemovalStatus(
 /*-----------------------------------------------------------------*/
 
 /**
- * Ћ©“®Љg‘е(ѓNѓЉѓbѓsѓ“ѓO)‚М—L–і‚МђЭ’и
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅпїЅпїЅпїЅпїЅgпїЅпїЅ(пїЅNпїЅпїЅпїЅbпїЅsпїЅпїЅпїЅO)пїЅМ—LпїЅпїЅпїЅМђЭ’пїЅ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
  * value:
- *   MOR_EASY_HDR_ENABLED  : Ћ©“®Љg‘е‚ ‚и
- *   MOR_EASY_HDR_DISABLED : Ћ©“®Љg‘е‚И‚µ
+ *   MOR_EASY_HDR_ENABLED  : пїЅпїЅпїЅпїЅпїЅgпїЅе‚ пїЅпїЅ
+ *   MOR_EASY_HDR_DISABLED : пїЅпїЅпїЅпїЅпїЅgпїЅпїЅпїЅИ‚пїЅ
  *
- * @param[in,out]  p      EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[in]      value  ђЭ’и’l
+ * @param[in,out]  p      EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[in]      value  пїЅЭ’пїЅпїЅl
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_setAutoScalingStatus(
@@ -411,13 +411,13 @@ morpho_EasyHDR_setAutoScalingStatus(
     int value);
 
 /**
- * Ћ©“®Љg‘е(ѓNѓЉѓbѓsѓ“ѓO)‚М—L–і‚МЋж“ѕ
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅпїЅпїЅпїЅпїЅgпїЅпїЅ(пїЅNпїЅпїЅпїЅbпїЅsпїЅпїЅпїЅO)пїЅМ—LпїЅпїЅпїЅМЋж“ѕ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p      EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[out]     value  ђЭ’и’lЉi”[ђж
+ * @param[in,out]  p      EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[out]     value  пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_getAutoScalingStatus(
@@ -427,17 +427,17 @@ morpho_EasyHDR_getAutoScalingStatus(
 /*-----------------------------------------------------------------*/
 
 /**
- * ЉзЊџЏo•вђі‚М—L–і‚МђЭ’и
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅзЊџпїЅoпїЅвђіпїЅМ—LпїЅпїЅпїЅМђЭ’пїЅ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
  * value:
- *   MOR_EASY_HDR_ENABLED  : ЉзЊџЏo•вђі‚ ‚и
- *   MOR_EASY_HDR_DISABLED : ЉзЊџЏo•вђі‚И‚µ
+ *   MOR_EASY_HDR_ENABLED  : пїЅзЊџпїЅoпїЅвђіпїЅпїЅпїЅпїЅ
+ *   MOR_EASY_HDR_DISABLED : пїЅзЊџпїЅoпїЅвђіпїЅИ‚пїЅ
  *
- * @param[in,out]  p      EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[in]      value  ђЭ’и’l
+ * @param[in,out]  p      EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[in]      value  пїЅЭ’пїЅпїЅl
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_setFaceDetectionStatus(
@@ -445,13 +445,13 @@ morpho_EasyHDR_setFaceDetectionStatus(
     int value);
 
 /**
- * ЉзЊџЏo•вђі‚М—L–і‚МЋж“ѕ
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅзЊџпїЅoпїЅвђіпїЅМ—LпїЅпїЅпїЅМЋж“ѕ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p      EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[out]     value  ђЭ’и’lЉi”[ђж
+ * @param[in,out]  p      EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[out]     value  пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_getFaceDetectionStatus(
@@ -461,17 +461,17 @@ morpho_EasyHDR_getFaceDetectionStatus(
 /*-----------------------------------------------------------------*/
 
 /**
- * Fail-soft-merging ‚М—L–і‚МђЭ’и
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * Fail-soft-merging пїЅМ—LпїЅпїЅпїЅМђЭ’пїЅ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
  * value:
- *   MOR_EASY_HDR_ENABLED  : Fail-soft-merging ‚ ‚и
- *   MOR_EASY_HDR_DISABLED : Fail-soft-merging ‚И‚µ
+ *   MOR_EASY_HDR_ENABLED  : Fail-soft-merging пїЅпїЅпїЅпїЅ
+ *   MOR_EASY_HDR_DISABLED : Fail-soft-merging пїЅИ‚пїЅ
  *
- * @param[in,out]  p      EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[in]      value  ђЭ’и’l
+ * @param[in,out]  p      EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[in]      value  пїЅЭ’пїЅпїЅl
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_setFailSoftMergingStatus(
@@ -479,13 +479,13 @@ morpho_EasyHDR_setFailSoftMergingStatus(
     int value);
 
 /**
- * Fail-soft-merging ‚М—L–і‚МЋж“ѕ
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * Fail-soft-merging пїЅМ—LпїЅпїЅпїЅМЋж“ѕ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p      EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[out]     value  ђЭ’и’lЉi”[ђж
+ * @param[in,out]  p      EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[out]     value  пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_getFailSoftMergingStatus(
@@ -495,13 +495,13 @@ morpho_EasyHDR_getFailSoftMergingStatus(
 /*-----------------------------------------------------------------*/
 
 /**
- * ѓSЃ[ѓXѓg”»’иЉґ“xѓЊѓxѓ‹‚МђЭ’и
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅSпїЅ[пїЅXпїЅgпїЅпїЅпїЅиЉґпїЅxпїЅпїЅпїЅxпїЅпїЅпїЅМђЭ’пїЅ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p      EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[in]      value  ђЭ’и’l
+ * @param[in,out]  p      EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[in]      value  пїЅЭ’пїЅпїЅl
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_setGhostDetectionSensitivityLevel(
@@ -509,13 +509,13 @@ morpho_EasyHDR_setGhostDetectionSensitivityLevel(
     int value);
 
 /**
- * ѓSЃ[ѓXѓg”»’иЉґ“xѓЊѓxѓ‹‚МЋж“ѕ
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅSпїЅ[пїЅXпїЅgпїЅпїЅпїЅиЉґпїЅxпїЅпїЅпїЅxпїЅпїЅпїЅМЋж“ѕ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p      EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[out]     value  ђЭ’и’lЉi”[ђж
+ * @param[in,out]  p      EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[out]     value  пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_getGhostDetectionSensitivityLevel(
@@ -525,13 +525,13 @@ morpho_EasyHDR_getGhostDetectionSensitivityLevel(
 /*-----------------------------------------------------------------*/
 
 /**
- * Ќ‡ђ¬‚И‚Я‚з‚©‚і‚МђЭ’и
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅпїЅпїЅпїЅпїЅИ‚Я‚з‚©пїЅпїЅпїЅМђЭ’пїЅ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p      EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[in]      value  ђЭ’и’l
+ * @param[in,out]  p      EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[in]      value  пїЅЭ’пїЅпїЅl
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_setMergeSmoothnessLevel(
@@ -539,13 +539,13 @@ morpho_EasyHDR_setMergeSmoothnessLevel(
     int value);
 
 /**
- * Ќ‡ђ¬‚И‚Я‚з‚©‚і‚МЋж“ѕ
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅпїЅпїЅпїЅпїЅИ‚Я‚з‚©пїЅпїЅпїЅМЋж“ѕ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p      EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[out]     value  ђЭ’и’lЉi”[ђж
+ * @param[in,out]  p      EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[out]     value  пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_getMergeSmoothnessLevel(
@@ -555,16 +555,16 @@ morpho_EasyHDR_getMergeSmoothnessLevel(
 /*-----------------------------------------------------------------*/
 
 /**
- * Ќ‡ђ¬ѓpѓ‰ѓЃЃ[ѓ^‚МђЭ’и
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅпїЅпїЅпїЅпїЅpпїЅпїЅпїЅпїЅпїЅ[пїЅ^пїЅМђЭ’пїЅ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p       EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[in]      value1  ђЭ’и’l
- * @param[in]      value2  ђЭ’и’l
- * @param[in]      value3  ђЭ’и’l
- * @param[in]      value4  ђЭ’и’l
+ * @param[in,out]  p       EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[in]      value1  пїЅЭ’пїЅпїЅl
+ * @param[in]      value2  пїЅЭ’пїЅпїЅl
+ * @param[in]      value3  пїЅЭ’пїЅпїЅl
+ * @param[in]      value4  пїЅЭ’пїЅпїЅl
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_setMergeParameters(
@@ -575,16 +575,16 @@ morpho_EasyHDR_setMergeParameters(
     int value4);
 
 /**
- * Ќ‡ђ¬ѓpѓ‰ѓЃЃ[ѓ^‚МЋж“ѕ
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅпїЅпїЅпїЅпїЅpпїЅпїЅпїЅпїЅпїЅ[пїЅ^пїЅМЋж“ѕ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p       EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[out]     value1  ђЭ’и’lЉi”[ђж
- * @param[out]     value2  ђЭ’и’lЉi”[ђж
- * @param[out]     value3  ђЭ’и’lЉi”[ђж
- * @param[out]     value4  ђЭ’и’lЉi”[ђж
+ * @param[in,out]  p       EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[out]     value1  пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
+ * @param[out]     value2  пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
+ * @param[out]     value3  пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
+ * @param[out]     value4  пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_getMergeParameters(
@@ -597,13 +597,13 @@ morpho_EasyHDR_getMergeParameters(
 /*-----------------------------------------------------------------*/
 
 /**
- * —LЊш—М€жи‡’l‚МђЭ’и
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅLпїЅпїЅпїЅМ€пїЅи‡’lпїЅМђЭ’пїЅ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p     EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[in]      rate  ђЭ’и’l (’†‰› rate % ‹йЊ`)
+ * @param[in,out]  p     EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[in]      rate  пїЅЭ’пїЅпїЅl (пїЅпїЅпїЅпїЅ rate % пїЅпїЅпїЅ`)
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_setReliableRectRateThreshold(
@@ -611,13 +611,13 @@ morpho_EasyHDR_setReliableRectRateThreshold(
     int rate);
 
 /**
- * —LЊш—М€жи‡’l‚МЋж“ѕ
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅLпїЅпїЅпїЅМ€пїЅи‡’lпїЅМЋж“ѕ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p     EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[out]     rate  ђЭ’и’lЉi”[ђж
+ * @param[in,out]  p     EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[out]     rate  пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_getReliableRectRateThreshold(
@@ -625,14 +625,14 @@ morpho_EasyHDR_getReliableRectRateThreshold(
     int *rate);
 
 /**
- * —LЊш—М€ж‚МЋж“ѕ
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
- * (—LЊш‚И’l‚ЄѓZѓbѓg‚і‚к‚й‚М‚Н merge() Њг)
+ * пїЅLпїЅпїЅпїЅМ€пїЅпїЅМЋж“ѕ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
+ * (пїЅLпїЅпїЅпїЅИ’lпїЅпїЅпїЅZпїЅbпїЅgпїЅпїЅпїЅпїЅпїЅпїЅпїЅМ‚пїЅ merge() пїЅпїЅ)
  *
- * @param[in,out]  p     EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[out]     rect  ђЭ’и’lЉi”[ђж
+ * @param[in,out]  p     EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[out]     rect  пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_getReliableRect(
@@ -642,13 +642,13 @@ morpho_EasyHDR_getReliableRect(
 /*-----------------------------------------------------------------*/
 
 /**
- * ѓSЃ[ѓXѓgЉ„Ќ‡и‡’l‚МђЭ’и
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅSпїЅ[пїЅXпїЅgпїЅпїЅпїЅпїЅи‡’lпїЅМђЭ’пїЅ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p     EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[in]      rate  ђЭ’и’l
+ * @param[in,out]  p     EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[in]      rate  пїЅЭ’пїЅпїЅl
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_setGhostRateThreshold(
@@ -656,13 +656,13 @@ morpho_EasyHDR_setGhostRateThreshold(
     int rate);
 
 /**
- * ѓSЃ[ѓXѓgЉ„Ќ‡и‡’l‚МЋж“ѕ
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅSпїЅ[пїЅXпїЅgпїЅпїЅпїЅпїЅи‡’lпїЅМЋж“ѕ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p     EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[out]     rate  ђЭ’и’lЉi”[ђж
+ * @param[in,out]  p     EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[out]     rate  пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_getGhostRateThreshold(
@@ -672,18 +672,18 @@ morpho_EasyHDR_getGhostRateThreshold(
 /*-----------------------------------------------------------------*/
 
 /**
- * ђF•вђіѓpѓ‰ѓЃЃ[ѓ^‚МђЭ’и
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅFпїЅвђіпїЅpпїЅпїЅпїЅпїЅпїЅ[пїЅ^пїЅМђЭ’пїЅ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p         EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[in]      y_offset  ђЭ’и’l
- * @param[in]      y_gain    ђЭ’и’l
- * @param[in]      y_gamma   ђЭ’и’l
- * @param[in]      c_offset  ђЭ’и’l
- * @param[in]      c_gain    ђЭ’и’l
- * @param[in]      c_gamma   ђЭ’и’l
+ * @param[in,out]  p         EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[in]      y_offset  пїЅЭ’пїЅпїЅl
+ * @param[in]      y_gain    пїЅЭ’пїЅпїЅl
+ * @param[in]      y_gamma   пїЅЭ’пїЅпїЅl
+ * @param[in]      c_offset  пїЅЭ’пїЅпїЅl
+ * @param[in]      c_gain    пїЅЭ’пїЅпїЅl
+ * @param[in]      c_gamma   пїЅЭ’пїЅпїЅl
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_setColorCorrectionParameters(
@@ -696,18 +696,18 @@ morpho_EasyHDR_setColorCorrectionParameters(
     int c_gamma);
 
 /**
- * ђF•вђіѓpѓ‰ѓЃЃ[ѓ^‚МЋж“ѕ
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅFпїЅвђіпїЅpпїЅпїЅпїЅпїЅпїЅ[пїЅ^пїЅМЋж“ѕ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p         EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[out]     y_offset  ђЭ’и’lЉi”[ђж
- * @param[out]     y_gain    ђЭ’и’lЉi”[ђж
- * @param[out]     y_gamma   ђЭ’и’lЉi”[ђж
- * @param[out]     c_offset  ђЭ’и’lЉi”[ђж
- * @param[out]     c_gain    ђЭ’и’lЉi”[ђж
- * @param[out]     c_gamma   ђЭ’и’lЉi”[ђж
+ * @param[in,out]  p         EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[out]     y_offset  пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
+ * @param[out]     y_gain    пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
+ * @param[out]     y_gamma   пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
+ * @param[out]     c_offset  пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
+ * @param[out]     c_gain    пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
+ * @param[out]     c_gamma   пїЅЭ’пїЅпїЅlпїЅiпїЅ[пїЅпїЅ
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_getColorCorrectionParameters(
@@ -722,16 +722,16 @@ morpho_EasyHDR_getColorCorrectionParameters(
 /*-----------------------------------------------------------------*/
 
 /**
- * Ќ‡ђ¬ѓXѓeЃ[ѓ^ѓX‚МЋж“ѕ
- * initialize() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅпїЅпїЅпїЅпїЅXпїЅeпїЅ[пїЅ^пїЅXпїЅМЋж“ѕ
+ * initialize() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * ѓXѓeЃ[ѓ^ѓXѓRЃ[ѓh
+ * пїЅXпїЅeпїЅ[пїЅ^пїЅXпїЅRпїЅ[пїЅh
  *   MORPHO_EASY_HDR_OK
  *   MORPHO_EASY_HDR_ERROR_*
  *
- * @param[in,out]  p  EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
+ * @param[in,out]  p  EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
  *
- * @return ѓXѓeЃ[ѓ^ѓXѓRЃ[ѓh (MORPHO_EASMORPHO_EASY_HDR_ERROR_
+ * @return пїЅXпїЅeпїЅ[пїЅ^пїЅXпїЅRпїЅ[пїЅh (MORPHO_EASMORPHO_EASY_HDR_ERROR_
  */
 MORPHO_API(int)
 morpho_EasyHDR_getMergeStatus(
@@ -740,14 +740,14 @@ morpho_EasyHDR_getMergeStatus(
 /*-----------------------------------------------------------------*/
 
 /**
- * ѓTѓЂѓlѓCѓ‹‚МЌмђ¬ (Џo—Н‰ж‘њ‚МЏkЏ¬)
- * morpho_EasyHDR_setImageFormat() ЋАЌsЊг‚ЙЋАЌs‰В”\
+ * пїЅTпїЅпїЅпїЅlпїЅCпїЅпїЅпїЅМЌмђ¬ (пїЅoпїЅН‰ж‘њпїЅМЏkпїЅпїЅ)
+ * morpho_EasyHDR_setImageFormat() пїЅпїЅsпїЅпїЅпїЅЙЋпїЅsпїЅВ”\
  *
- * @param[in,out]  p                EasyHDR ѓCѓ“ѓXѓ^ѓ“ѓX
- * @param[out]     thumbnail_image  Џo—Н‰ж‘њ
- * @param[in]      output_image     “ь—Н‰ж‘њ
+ * @param[in,out]  p                EasyHDR пїЅCпїЅпїЅпїЅXпїЅ^пїЅпїЅпїЅX
+ * @param[out]     thumbnail_image  пїЅoпїЅН‰ж‘њ
+ * @param[in]      output_image     пїЅпїЅпїЅН‰ж‘њ
  *
- * @return ѓGѓ‰Ѓ[ѓRЃ[ѓh (see morpho_error.h)
+ * @return пїЅGпїЅпїЅпїЅ[пїЅRпїЅ[пїЅh (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_EasyHDR_makeThumbnail(

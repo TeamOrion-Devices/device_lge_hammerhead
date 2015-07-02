@@ -1,6 +1,6 @@
 /*******************************************************************
  * morpho_hdr_checker.h
- * [CP932/CRLF] { ‚  •„†‰»•ûŽ®Ž©“®”»’è—p }
+ * [CP932/CRLF] { ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½p }
  *------------------------------------------------------------------
  * Copyright (C) 2011-2012 Morpho,Inc.
  *******************************************************************/
@@ -29,13 +29,13 @@
 
 typedef struct _morpho_HDRChecker morpho_HDRChecker;
 
-/* HDRŽw•W•]‰¿Ší */
+/* HDRï¿½wï¿½Wï¿½]ï¿½ï¿½ï¿½ï¿½ */
 struct _morpho_HDRChecker
 {
-    void *p; /**< “à•”\‘¢‘Ì‚Ö‚Ìƒ|ƒCƒ“ƒ^ */
+    void *p; /**< ï¿½ï¿½ï¿½\ï¿½ï¿½ï¿½Ì‚Ö‚Ìƒ|ï¿½Cï¿½ï¿½ï¿½^ */
 };
 
-/* ”’”ò‚ÑE•‚Â‚Ô‚ê”»’è‚Ì•qŠ´“x */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ÑEï¿½ï¿½ï¿½Â‚Ô‚ê”»ï¿½ï¿½ï¿½Ì•qï¿½ï¿½ï¿½x */
 typedef enum {
     MORPHO_HDR_CHECKER_SENSITIVITY_SENSITIVE,
     MORPHO_HDR_CHECKER_SENSITIVITY_NORMAL,
@@ -49,20 +49,20 @@ extern "C" {
 #endif
 
 /**
- * ƒo[ƒWƒ‡ƒ“•¶Žš—ñ‚ðŽæ“¾
+ * ï¿½oï¿½[ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ“¾
  *
- * @return ƒo[ƒWƒ‡ƒ“•¶Žš—ñ(MORPHO_EASY_HDR_VER)
+ * @return ï¿½oï¿½[ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(MORPHO_EASY_HDR_VER)
  */
 MORPHO_API(const char*)
 morpho_HDRChecker_getVersion(void);
 
 /**
- * •K—v‚Èƒƒ‚ƒŠƒTƒCƒY‚ðŽæ“¾
+ * ï¿½Kï¿½vï¿½Èƒï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Tï¿½Cï¿½Yï¿½ï¿½ï¿½æ“¾
  *
- * @param[in] width  “ü—Í‰æ‘œ‚Ì•
- * @param[in] height “ü—Í‰æ‘œ‚Ì‚‚³
- * @param[in] format “ü—Í‰æ‘œ‚ÌƒtƒH[ƒ}ƒbƒg
- * @return •K—v‚Èƒƒ‚ƒŠƒTƒCƒY(byte)
+ * @param[in] width  ï¿½ï¿½ï¿½Í‰æ‘œï¿½Ì•ï¿½
+ * @param[in] height ï¿½ï¿½ï¿½Í‰æ‘œï¿½Ìï¿½ï¿½ï¿½
+ * @param[in] format ï¿½ï¿½ï¿½Í‰æ‘œï¿½Ìƒtï¿½Hï¿½[ï¿½}ï¿½bï¿½g
+ * @return ï¿½Kï¿½vï¿½Èƒï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Tï¿½Cï¿½Y(byte)
  */
 MORPHO_API(int)
 morpho_HDRChecker_getBufferSize(
@@ -71,15 +71,15 @@ morpho_HDRChecker_getBufferSize(
     const char *format);
 
 /**
- * ‰Šú‰»
+ * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
  *
- * @param[in,out] p           HDRCheckerƒCƒ“ƒXƒ^ƒ“ƒX
- * @param[in]     buffer      HDRChecker‚ÉŠ„‚è“–‚Ä‚éƒƒ‚ƒŠ‚Ö‚Ìƒ|ƒCƒ“ƒ^
- * @param[in]     buffer_size HDRChecker‚ÉŠ„‚è“–‚Ä‚éƒƒ‚ƒŠ‚ÌƒTƒCƒY
- * @param[in]     width       “ü—Í‰æ‘œ‚Ì•
- * @param[in]     height      “ü—Í‰æ‘œ‚Ì‚‚³
- * @param[in]     format      “ü—Í‰æ‘œ‚ÌƒtƒH[ƒ}ƒbƒg
- * @return ƒGƒ‰[ƒR[ƒh (see morpho_error.h)
+ * @param[in,out] p           HDRCheckerï¿½Cï¿½ï¿½ï¿½Xï¿½^ï¿½ï¿½ï¿½X
+ * @param[in]     buffer      HDRCheckerï¿½ÉŠï¿½ï¿½è“–ï¿½Ä‚éƒï¿½ï¿½ï¿½ï¿½ï¿½Ö‚Ìƒ|ï¿½Cï¿½ï¿½ï¿½^
+ * @param[in]     buffer_size HDRCheckerï¿½ÉŠï¿½ï¿½è“–ï¿½Ä‚éƒï¿½ï¿½ï¿½ï¿½ï¿½ÌƒTï¿½Cï¿½Y
+ * @param[in]     width       ï¿½ï¿½ï¿½Í‰æ‘œï¿½Ì•ï¿½
+ * @param[in]     height      ï¿½ï¿½ï¿½Í‰æ‘œï¿½Ìï¿½ï¿½ï¿½
+ * @param[in]     format      ï¿½ï¿½ï¿½Í‰æ‘œï¿½Ìƒtï¿½Hï¿½[ï¿½}ï¿½bï¿½g
+ * @return ï¿½Gï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½h (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_HDRChecker_initialize(
@@ -91,11 +91,11 @@ morpho_HDRChecker_initialize(
     const char *format);
 
 /**
- * ƒNƒŠ[ƒ“ƒAƒbƒv
- * initialize()ŽÀsŒã‚ÉŽÀs‰Â”\
+ * ï¿½Nï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Aï¿½bï¿½v
+ * initialize()ï¿½ï¿½sï¿½ï¿½ï¿½ÉŽï¿½sï¿½Â”\
  *
- * @param[in,out] p HDRCheckerƒCƒ“ƒXƒ^ƒ“ƒX
- * @return ƒGƒ‰[ƒR[ƒh (see morpho_error.h)
+ * @param[in,out] p HDRCheckerï¿½Cï¿½ï¿½ï¿½Xï¿½^ï¿½ï¿½ï¿½X
+ * @return ï¿½Gï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½h (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_HDRChecker_finalize(
@@ -104,12 +104,12 @@ morpho_HDRChecker_finalize(
 /*-----------------------------------------------------------------*/
 
 /**
- * HDRŽw•WŒvŽZ‚Ì•qŠ´«‚ÌÝ’è
- * initialize()ŽÀsŒã‚ÉŽÀs‰Â”\
+ * HDRï¿½wï¿½Wï¿½vï¿½Zï¿½Ì•qï¿½ï¿½ï¿½ï¿½ï¿½ÌÝ’ï¿½
+ * initialize()ï¿½ï¿½sï¿½ï¿½ï¿½ÉŽï¿½sï¿½Â”\
  *
- * @param[in,out] p           HDRCheckerƒCƒ“ƒXƒ^ƒ“ƒX
- * @param[in]     sensitivity •qŠ´«(MORPHO_HDR_CHECKER_SENSITIVIY—ñ‹“‘Ì‚ÅŽw’è)
- * @return ƒGƒ‰[ƒR[ƒh (see morpho_error.h)
+ * @param[in,out] p           HDRCheckerï¿½Cï¿½ï¿½ï¿½Xï¿½^ï¿½ï¿½ï¿½X
+ * @param[in]     sensitivity ï¿½qï¿½ï¿½ï¿½ï¿½(MORPHO_HDR_CHECKER_SENSITIVIYï¿½ñ‹“‘Ì‚ÅŽwï¿½ï¿½)
+ * @return ï¿½Gï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½h (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_HDRChecker_setSensitivity(
@@ -117,12 +117,12 @@ morpho_HDRChecker_setSensitivity(
     MORPHO_HDR_CHECKER_SENSITIVITY sensitivity);
 
 /**
- * HDRŽw•WŒvŽZ‚Ì•qŠ´«‚ÌŽæ“¾
- * initialize()ŽÀsŒã‚ÉŽÀs‰Â”\
+ * HDRï¿½wï¿½Wï¿½vï¿½Zï¿½Ì•qï¿½ï¿½ï¿½ï¿½ï¿½ÌŽæ“¾
+ * initialize()ï¿½ï¿½sï¿½ï¿½ï¿½ÉŽï¿½sï¿½Â”\
  *
- * @param[in,out] p           HDRCheckerƒCƒ“ƒXƒ^ƒ“ƒX
- * @param[out]    sensitivity •qŠ´«‚Ö‚Ìƒ|ƒCƒ“ƒ^
- * @return ƒGƒ‰[ƒR[ƒh (see morpho_error.h)
+ * @param[in,out] p           HDRCheckerï¿½Cï¿½ï¿½ï¿½Xï¿½^ï¿½ï¿½ï¿½X
+ * @param[out]    sensitivity ï¿½qï¿½ï¿½ï¿½ï¿½ï¿½Ö‚Ìƒ|ï¿½Cï¿½ï¿½ï¿½^
+ * @return ï¿½Gï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½h (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_HDRChecker_getSensitivity(
@@ -130,15 +130,15 @@ morpho_HDRChecker_getSensitivity(
     MORPHO_HDR_CHECKER_SENSITIVITY *sensitivity);
 
 /**
- * HDRŽw•W‚Ì•]‰¿
- * initialize()ŽÀsŒã‚ÉŽÀs‰Â”\
+ * HDRï¿½wï¿½Wï¿½Ì•]ï¿½ï¿½
+ * initialize()ï¿½ï¿½sï¿½ï¿½ï¿½ÉŽï¿½sï¿½Â”\
  *
- * @param[in,out] p      HDRCheckerƒCƒ“ƒXƒ^ƒ“ƒX
- * @param[out]    result •]‰¿Œ‹‰Ê‚ðŠi”[‚·‚é”z—ñ(—v‘f”4‚Ì”z—ñ)
- *                       —v‘f‚ª”ñƒ[ƒ‚Ìê‡‚É‘Î‰ž‚·‚é‰º‹L‚Ì˜Io‚Ì‰æ‘œ‚ª•K—v‚Æ”»’è
- *                       {+2, +1, -1, -2}‚Ì‡‚É”»’èŒ‹‰Ê‚ªŠi”[‚³‚ê‚é
- * @param[in]     input_image “ü—Í‰æ‘œ
- * @return ƒGƒ‰[ƒR[ƒh (see morpho_error.h)
+ * @param[in,out] p      HDRCheckerï¿½Cï¿½ï¿½ï¿½Xï¿½^ï¿½ï¿½ï¿½X
+ * @param[out]    result ï¿½]ï¿½ï¿½ï¿½ï¿½ï¿½Ê‚ï¿½ï¿½iï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½(ï¿½vï¿½fï¿½ï¿½4ï¿½Ì”zï¿½ï¿½)
+ *                       ï¿½vï¿½fï¿½ï¿½ï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Ìê‡ï¿½É‘Î‰ï¿½ï¿½ï¿½ï¿½é‰ºï¿½Lï¿½Ì˜Iï¿½oï¿½Ì‰æ‘œï¿½ï¿½ï¿½Kï¿½vï¿½Æ”ï¿½ï¿½ï¿½
+ *                       {+2, +1, -1, -2}ï¿½Ìï¿½ï¿½É”ï¿½ï¿½èŒ‹ï¿½Ê‚ï¿½ï¿½iï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @param[in]     input_image ï¿½ï¿½ï¿½Í‰æ‘œ
+ * @return ï¿½Gï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½h (see morpho_error.h)
  */
 MORPHO_API(int)
 morpho_HDRChecker_evaluate(

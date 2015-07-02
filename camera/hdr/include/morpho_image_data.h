@@ -1,6 +1,6 @@
 /**
  * @file     morpho_image_data.h
- * @brief    ‰æ‘œƒf[ƒ^‚Ì\‘¢‘Ì’è‹`
+ * @brief    ï¿½æ‘œï¿½fï¿½[ï¿½^ï¿½Ì\ï¿½ï¿½ï¿½Ì’ï¿½ï¿½`
  * @version  1.0.0
  * @date     2008-06-09
  *
@@ -15,22 +15,22 @@ extern "C" {
 #endif
 
 typedef struct{
-    void * y;               /**< Y‰æ‘œ‚Ìæ“ªƒ|ƒCƒ“ƒ^ */
-    void * u;               /**< U‰æ‘œ‚Ìæ“ªƒ|ƒCƒ“ƒ^ */
-    void * v;               /**< V‰æ‘œ‚Ìæ“ªƒ|ƒCƒ“ƒ^ */
+    void * y;               /**< Yï¿½æ‘œï¿½Ìæ“ªï¿½|ï¿½Cï¿½ï¿½ï¿½^ */
+    void * u;               /**< Uï¿½æ‘œï¿½Ìæ“ªï¿½|ï¿½Cï¿½ï¿½ï¿½^ */
+    void * v;               /**< Vï¿½æ‘œï¿½Ìæ“ªï¿½|ï¿½Cï¿½ï¿½ï¿½^ */
 } morpho_ImageYuvPlanar;
 
 typedef struct{
-    void * y;               /**< Y‰æ‘œ‚Ìæ“ªƒ|ƒCƒ“ƒ^ */
-    void * uv;              /**< UV‰æ‘œ‚Ìæ“ªƒ|ƒCƒ“ƒ^ */
+    void * y;               /**< Yï¿½æ‘œï¿½Ìæ“ªï¿½|ï¿½Cï¿½ï¿½ï¿½^ */
+    void * uv;              /**< UVï¿½æ‘œï¿½Ìæ“ªï¿½|ï¿½Cï¿½ï¿½ï¿½^ */
 } morpho_ImageYuvSemiPlanar;
 
-/** ‰æ‘œƒf[ƒ^. */
+/** ï¿½æ‘œï¿½fï¿½[ï¿½^. */
 typedef struct {
-    int width;              /**< • */
-    int height;             /**< ‚‚³ */
+    int width;              /**< ï¿½ï¿½ */
+    int height;             /**< ï¿½ï¿½ï¿½ï¿½ */
     union{
-        void * p;           /**< ‰æ‘œƒf[ƒ^‚Ìæ“ªƒ|ƒCƒ“ƒ^ */
+        void * p;           /**< ï¿½æ‘œï¿½fï¿½[ï¿½^ï¿½Ìæ“ªï¿½|ï¿½Cï¿½ï¿½ï¿½^ */
         morpho_ImageYuvPlanar planar;
         morpho_ImageYuvSemiPlanar semi_planar;
     } dat;

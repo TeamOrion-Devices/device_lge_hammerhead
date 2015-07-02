@@ -1,6 +1,6 @@
 //====================================================================
 // morpho_noise_reduction.h
-// [SJIS/CRLF] { ‚  •„†‰»•ûŽ®Ž©“®”»’è—p }
+// [SJIS/CRLF] { ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½p }
 //
 // Copyright(c) 2006-2012 Morpho,Inc.
 //====================================================================
@@ -24,34 +24,34 @@ extern "C" {
 
 //====================================================================
 
-/** ƒo[ƒWƒ‡ƒ“•¶Žš—ñ */
+/** ï¿½oï¿½[ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 # define MORPHO_NOISE_REDUCTION_VERSION "Morpho Noise Reduction Ver.0.9.0 2012/08/09"
 
 //--------------------------------------------------------------------
-/** ƒmƒCƒYœ‹ŽŠí */
+/** ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 typedef struct
 {
-    void *p; /**< “à•”\‘¢‘Ì‚Ö‚Ìƒ|ƒCƒ“ƒ^ */
+    void *p; /**< ï¿½ï¿½ï¿½\ï¿½ï¿½ï¿½Ì‚Ö‚Ìƒ|ï¿½Cï¿½ï¿½ï¿½^ */
 } morpho_NoiseReduction;
 
 //--------------------------------------------------------------------
 
 /**
- * ƒo[ƒWƒ‡ƒ“•¶Žš—ñ‚ðŽæ“¾
+ * ï¿½oï¿½[ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½æ“¾
  *
- * @return ƒo[ƒWƒ‡ƒ“•¶Žš—ñ(MORPHO_IMAGE_STABILIZER_VERSION)
+ * @return ï¿½oï¿½[ï¿½Wï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½(MORPHO_IMAGE_STABILIZER_VERSION)
  */
 MORPHO_API(const char *)
 morpho_NoiseReduction_getVersion(void);
 
 /**
- * ƒmƒCƒYœ‹Žˆ—‚É•K—v‚Èƒƒ‚ƒŠƒTƒCƒY‚ðŽæ“¾
- * Žw’è‚Å‚«‚éƒtƒH[ƒ}ƒbƒg‚ÍTRM‚ðŽQÆB
+ * ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É•Kï¿½vï¿½Èƒï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Tï¿½Cï¿½Yï¿½ï¿½ï¿½æ“¾
+ * ï¿½wï¿½ï¿½ï¿½Å‚ï¿½ï¿½ï¿½ï¿½tï¿½Hï¿½[ï¿½}ï¿½bï¿½gï¿½ï¿½TRMï¿½ï¿½ï¿½Qï¿½ÆB
  *
- * @param[in] width  “ü—Í‰æ‘œ‚Ì•
- * @param[in] height “ü—Í‰æ‘œ‚Ì‚‚³
- * @param[in] format ‰æ‘œƒtƒH[ƒ}ƒbƒg•¶Žš—ñ
- * @return •K—v‚Èƒƒ‚ƒŠƒTƒCƒY(byte)
+ * @param[in] width  ï¿½ï¿½ï¿½Í‰æ‘œï¿½Ì•ï¿½
+ * @param[in] height ï¿½ï¿½ï¿½Í‰æ‘œï¿½Ìï¿½ï¿½ï¿½
+ * @param[in] format ï¿½æ‘œï¿½tï¿½Hï¿½[ï¿½}ï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @return ï¿½Kï¿½vï¿½Èƒï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Tï¿½Cï¿½Y(byte)
  */
 MORPHO_API(int)
 morpho_NoiseReduction_getBufferSize(
@@ -60,12 +60,12 @@ morpho_NoiseReduction_getBufferSize(
     const char *format);
 
 /**
- * ƒmƒCƒYœ‹ŽŠí‚Ì‰Šú‰»
+ * ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ìï¿½ï¿½ï¿½ï¿½ï¿½
  *
- * @param[out] reducer  ƒmƒCƒYœ‹ŽŠí
- * @param[out] buffer      ƒmƒCƒYœ‹ŽŠí‚ÉŠ„‚è“–‚Ä‚éƒƒ‚ƒŠ‚Ö‚Ìƒ|ƒCƒ“ƒ^
- * @param[in]  buffer_size ƒmƒCƒYœ‹ŽŠí‚ÉŠ„‚è“–‚Ä‚éƒƒ‚ƒŠ‚ÌƒTƒCƒY.
- * @return ƒGƒ‰[ƒR[ƒh(morpho_error.h)
+ * @param[out] reducer  ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @param[out] buffer      ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÉŠï¿½ï¿½è“–ï¿½Ä‚éƒï¿½ï¿½ï¿½ï¿½ï¿½Ö‚Ìƒ|ï¿½Cï¿½ï¿½ï¿½^
+ * @param[in]  buffer_size ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÉŠï¿½ï¿½è“–ï¿½Ä‚éƒï¿½ï¿½ï¿½ï¿½ï¿½ÌƒTï¿½Cï¿½Y.
+ * @return ï¿½Gï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½h(morpho_error.h)
  */
 MORPHO_API(int)
 morpho_NoiseReduction_initialize(
@@ -74,22 +74,22 @@ morpho_NoiseReduction_initialize(
     int buffer_size);
 
 /**
- * ƒmƒCƒYœ‹ŽŠí‚ÌƒNƒŠ[ƒ“ƒAƒbƒv
+ * ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÌƒNï¿½ï¿½ï¿½[ï¿½ï¿½ï¿½Aï¿½bï¿½v
  *
- * @param[in,out] reducer ƒmƒCƒYœ‹ŽŠí
- * @return ƒGƒ‰[ƒR[ƒh(morpho_error.h)
+ * @param[in,out] reducer ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @return ï¿½Gï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½h(morpho_error.h)
  */
 MORPHO_API(int)
 morpho_NoiseReduction_finalize(
     morpho_NoiseReduction *reducer);
 
 /**
- * ƒmƒCƒYœ‹Žˆ—: ˆ—ŠJŽn
- * o—Í‰æ‘œ(output_image)‚Í1–‡–Ú‚Ì“ü—Í‰æ‘œ‚Æ“¯‚¶‚Å‚à—Ç‚¢
+ * ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: ï¿½ï¿½ï¿½ï¿½ï¿½Jï¿½n
+ * ï¿½oï¿½Í‰æ‘œ(output_image)ï¿½ï¿½1ï¿½ï¿½ï¿½Ú‚Ì“ï¿½ï¿½Í‰æ‘œï¿½Æ“ï¿½ï¿½ï¿½ï¿½Å‚ï¿½ï¿½Ç‚ï¿½
  *
- * @param[in,out] reducer    ƒmƒCƒYœ‹ŽŠí
- * @param[out]    output_image  o—Í‰æ‘œ
- * @return ƒGƒ‰[ƒR[ƒh(morpho_error.h)
+ * @param[in,out] reducer    ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @param[out]    output_image  ï¿½oï¿½Í‰æ‘œ
+ * @return ï¿½Gï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½h(morpho_error.h)
  */
 MORPHO_API(int)
 morpho_NoiseReduction_start(
@@ -97,11 +97,11 @@ morpho_NoiseReduction_start(
     morpho_ImageData *output_image);
 
 /**
- * ƒmƒCƒYœ‹Žˆ—: ƒmƒCƒYœ‹Ž
+ * ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½: ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½
  *
- * @param[in,out] reducer   ƒmƒCƒYœ‹ŽŠí
- * @param[out]    input_image  o—Í‰æ‘œ
- * @return ƒGƒ‰[ƒR[ƒh(morpho_error.h)
+ * @param[in,out] reducer   ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @param[out]    input_image  ï¿½oï¿½Í‰æ‘œ
+ * @return ï¿½Gï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½h(morpho_error.h)
  */
 MORPHO_API(int)
 morpho_NoiseReduction_reduceNoise(
@@ -109,14 +109,14 @@ morpho_NoiseReduction_reduceNoise(
     morpho_ImageData *input_image);
 
 /**
- * ‰æ‘œƒtƒH[ƒ}ƒbƒg‚ðŽæ“¾
- * initialize()ŽÀsŒã‚ÉŽæ“¾‰Â”\
- * ƒoƒbƒtƒ@ƒTƒCƒY‚Í32ˆÈã‚Æ‚·‚é‚±‚Æ
+ * ï¿½æ‘œï¿½tï¿½Hï¿½[ï¿½}ï¿½bï¿½gï¿½ï¿½ï¿½æ“¾
+ * initialize()ï¿½ï¿½sï¿½ï¿½ï¿½ÉŽæ“¾ï¿½Â”\
+ * ï¿½oï¿½bï¿½tï¿½@ï¿½Tï¿½Cï¿½Yï¿½ï¿½32ï¿½Èï¿½ï¿½Æ‚ï¿½ï¿½é‚±ï¿½ï¿½
  *
- * @param[in,out] reducer ƒmƒCƒYœ‹ŽŠí
- * @param[out] format ‰æ‘œƒtƒH[ƒ}ƒbƒg•¶Žš—ñ‚ªŠi”[‚³‚ê‚é
- * @param[in] buffer_size ƒoƒbƒtƒ@ƒTƒCƒY
- * @return ƒGƒ‰[ƒR[ƒh(morpho_error.h)
+ * @param[in,out] reducer ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @param[out] format ï¿½æ‘œï¿½tï¿½Hï¿½[ï¿½}ï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ñ‚ªŠiï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @param[in] buffer_size ï¿½oï¿½bï¿½tï¿½@ï¿½Tï¿½Cï¿½Y
+ * @return ï¿½Gï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½h(morpho_error.h)
  */
 MORPHO_API(int)
 morpho_NoiseReduction_getImageFormat(
@@ -125,12 +125,12 @@ morpho_NoiseReduction_getImageFormat(
     const int buffer_size);
 
 /**
- * ‹P“xƒmƒCƒYœ‹Ž‹­“xƒŒƒxƒ‹‚ðŽæ“¾
- * initialize()ŽÀsŒã‚ÉŽæ“¾‰Â”\
+ * ï¿½Pï¿½xï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xï¿½ï¿½ï¿½xï¿½ï¿½ï¿½ï¿½ï¿½æ“¾
+ * initialize()ï¿½ï¿½sï¿½ï¿½ï¿½ÉŽæ“¾ï¿½Â”\
  *
- * @param[in,out] reducer ƒmƒCƒYœ‹ŽŠí
- * @param[out] level ‹P“xƒmƒCƒYœ‹Ž‹­“xƒŒƒxƒ‹‚ªŠi”[‚³‚ê‚é
- * @return ƒGƒ‰[ƒR[ƒh(morpho_error.h)
+ * @param[in,out] reducer ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @param[out] level ï¿½Pï¿½xï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xï¿½ï¿½ï¿½xï¿½ï¿½ï¿½ï¿½ï¿½iï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @return ï¿½Gï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½h(morpho_error.h)
  */
 MORPHO_API(int)
 morpho_NoiseReduction_getLumaNoiseReductionLevel(
@@ -138,12 +138,12 @@ morpho_NoiseReduction_getLumaNoiseReductionLevel(
     int *level);
 
 /**
- * ƒNƒƒ}ƒmƒCƒYœ‹Ž‹­“xƒŒƒxƒ‹‚ðŽæ“¾
- * initialize()ŽÀsŒã‚ÉŽæ“¾‰Â”\
+ * ï¿½Nï¿½ï¿½ï¿½}ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xï¿½ï¿½ï¿½xï¿½ï¿½ï¿½ï¿½ï¿½æ“¾
+ * initialize()ï¿½ï¿½sï¿½ï¿½ï¿½ÉŽæ“¾ï¿½Â”\
  *
- * @param[in,out] reducer ƒmƒCƒYœ‹ŽŠí
- * @param[out] level ƒNƒƒ}ƒmƒCƒYœ‹Ž‹­“xƒŒƒxƒ‹‚ªŠi”[‚³‚ê‚é
- * @return ƒGƒ‰[ƒR[ƒh(morpho_error.h)
+ * @param[in,out] reducer ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @param[out] level ï¿½Nï¿½ï¿½ï¿½}ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xï¿½ï¿½ï¿½xï¿½ï¿½ï¿½ï¿½ï¿½iï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @return ï¿½Gï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½h(morpho_error.h)
  */
 MORPHO_API(int)
 morpho_NoiseReduction_getChromaNoiseReductionLevel(
@@ -151,13 +151,13 @@ morpho_NoiseReduction_getChromaNoiseReductionLevel(
     int *level);
 
 /**
- * ‰æ‘œƒtƒH[ƒ}ƒbƒg‚ðÝ’è
- * initialize()ŽÀsŒã‚©‚Âstart()ŽÀs‘O‚ÉÝ’è‰Â”\
- * Žw’è‚Å‚«‚éƒtƒH[ƒ}ƒbƒg‚ÍTRM‚ðŽQÆB
+ * ï¿½æ‘œï¿½tï¿½Hï¿½[ï¿½}ï¿½bï¿½gï¿½ï¿½ï¿½Ý’ï¿½
+ * initialize()ï¿½ï¿½sï¿½ã‚©ï¿½ï¿½start()ï¿½ï¿½sï¿½Oï¿½ÉÝ’ï¿½ï¿½Â”\
+ * ï¿½wï¿½ï¿½ï¿½Å‚ï¿½ï¿½ï¿½ï¿½tï¿½Hï¿½[ï¿½}ï¿½bï¿½gï¿½ï¿½TRMï¿½ï¿½ï¿½Qï¿½ÆB
  *
- * @param[in,out] reducer ƒmƒCƒYœ‹ŽŠí
- * @param[in] format ‰æ‘œƒtƒH[ƒ}ƒbƒg•¶Žš—ñ
- * @return ƒGƒ‰[ƒR[ƒh(morpho_error.h)
+ * @param[in,out] reducer ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @param[in] format ï¿½æ‘œï¿½tï¿½Hï¿½[ï¿½}ï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @return ï¿½Gï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½h(morpho_error.h)
  */
 MORPHO_API(int)
 morpho_NoiseReduction_setImageFormat(
@@ -165,12 +165,12 @@ morpho_NoiseReduction_setImageFormat(
     const char *format);
 
 /**
- * ‹P“xƒmƒCƒYœ‹Ž‹­“xƒŒƒxƒ‹‚ðÝ’è
- * initialize()ŽÀsŒã‚©‚Âstart()ŽÀs‘O‚ÉÝ’è‰Â”\
+ * ï¿½Pï¿½xï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xï¿½ï¿½ï¿½xï¿½ï¿½ï¿½ï¿½ï¿½Ý’ï¿½
+ * initialize()ï¿½ï¿½sï¿½ã‚©ï¿½ï¿½start()ï¿½ï¿½sï¿½Oï¿½ÉÝ’ï¿½ï¿½Â”\
  *
- * @param[in,out] reducer ƒmƒCƒYœ‹ŽŠí
- * @param[in] level ‹P“xƒmƒCƒYœ‹Ž‹­“xƒŒƒxƒ‹(0-7)
- * @return ƒGƒ‰[ƒR[ƒh(morpho_error.h)
+ * @param[in,out] reducer ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @param[in] level ï¿½Pï¿½xï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xï¿½ï¿½ï¿½xï¿½ï¿½(0-7)
+ * @return ï¿½Gï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½h(morpho_error.h)
  */
 MORPHO_API(int)
 morpho_NoiseReduction_setLumaNoiseReductionLevel(
@@ -178,12 +178,12 @@ morpho_NoiseReduction_setLumaNoiseReductionLevel(
     int level);
 
 /**
- * ƒNƒƒ}ƒmƒCƒYœ‹Ž‹­“xƒŒƒxƒ‹‚ðÝ’è
- * initialize()ŽÀsŒã‚©‚Âstart()ŽÀs‘O‚ÉÝ’è‰Â”\
+ * ï¿½Nï¿½ï¿½ï¿½}ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xï¿½ï¿½ï¿½xï¿½ï¿½ï¿½ï¿½ï¿½Ý’ï¿½
+ * initialize()ï¿½ï¿½sï¿½ã‚©ï¿½ï¿½start()ï¿½ï¿½sï¿½Oï¿½ÉÝ’ï¿½ï¿½Â”\
  *
- * @param[in,out] reducer ƒmƒCƒYœ‹ŽŠí
- * @param[in] level ƒNƒƒ}ƒmƒCƒYœ‹Ž‹­“xƒŒƒxƒ‹(0-7)
- * @return ƒGƒ‰[ƒR[ƒh(morpho_error.h)
+ * @param[in,out] reducer ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+ * @param[in] level ï¿½Nï¿½ï¿½ï¿½}ï¿½mï¿½Cï¿½Yï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½xï¿½ï¿½ï¿½xï¿½ï¿½(0-7)
+ * @return ï¿½Gï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½h(morpho_error.h)
  */
 MORPHO_API(int)
 morpho_NoiseReduction_setChromaNoiseReductionLevel(

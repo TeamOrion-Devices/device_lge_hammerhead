@@ -1,6 +1,6 @@
 /**
  * @file     morpho_error.h
- * @brief    ƒGƒ‰[ƒR[ƒh‚Ì’è‹`
+ * @brief    ï¿½Gï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½hï¿½Ì’ï¿½ï¿½`
  * @version  1.0.0
  * @date     2008-06-09
  *
@@ -10,20 +10,20 @@
 #ifndef MORPHO_ERROR_H
 #define MORPHO_ERROR_H
 
-/** ƒGƒ‰[ƒR[ƒh .*/
-#define MORPHO_OK                   (0x00000000)  /**< ¬Œ÷ */
-#define MORPHO_DOPROCESS            (0x00000001)  /**< ˆ—’† */
-#define MORPHO_CANCELED             (0x00000002)  /**< ƒLƒƒƒ“ƒZƒ‹‚³‚ê‚½ */
-#define MORPHO_SUSPENDED            (0x00000008)  /**< ’†’f‚³‚ê‚½ */
+/** ï¿½Gï¿½ï¿½ï¿½[ï¿½Rï¿½[ï¿½h .*/
+#define MORPHO_OK                   (0x00000000)  /**< ï¿½ï¿½ï¿½ï¿½ */
+#define MORPHO_DOPROCESS            (0x00000001)  /**< ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
+#define MORPHO_CANCELED             (0x00000002)  /**< ï¿½Lï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ */
+#define MORPHO_SUSPENDED            (0x00000008)  /**< ï¿½ï¿½ï¿½fï¿½ï¿½ï¿½ê‚½ */
 
-#define MORPHO_ERROR_GENERAL_ERROR  (0x80000000)  /**< ˆê”Ê“I‚ÈƒGƒ‰[. */
-#define MORPHO_ERROR_PARAM          (0x80000001)  /**< ˆø”‚ª•s³. */
-#define MORPHO_ERROR_STATE          (0x80000002)  /**< “à•”ó‘Ô‚âŠÖ”ŒÄo‡˜‚ª•s³. */
-#define MORPHO_ERROR_MALLOC         (0x80000004)  /**< ƒƒ‚ƒŠƒAƒƒP[ƒVƒ‡ƒ“ƒGƒ‰[. */
-#define MORPHO_ERROR_IO             (0x80000008)  /**< “üo—ÍƒGƒ‰[. */
-#define MORPHO_ERROR_UNSUPPORTED    (0x80000010)  /**< ‹@”\‚ğƒTƒ|[ƒg‚µ‚Ä‚¢‚È‚¢. */
-#define MORPHO_ERROR_NOTFOUND       (0x80000020)  /**< ŒŸõ‘ÎÛ‚ªŒ©‚Â‚©‚ç‚È‚¢ */
-#define MORPHO_ERROR_INTERNAL       (0x80000040)  /**< “à•”ƒGƒ‰[. */
-#define MORPHO_ERROR_UNKNOWN        (0xC0000000)  /**< ã‹LˆÈŠO‚ÌƒGƒ‰[. */
+#define MORPHO_ERROR_GENERAL_ERROR  (0x80000000)  /**< ï¿½ï¿½ï¿½Ê“Iï¿½ÈƒGï¿½ï¿½ï¿½[. */
+#define MORPHO_ERROR_PARAM          (0x80000001)  /**< ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½. */
+#define MORPHO_ERROR_STATE          (0x80000002)  /**< ï¿½ï¿½ï¿½ï¿½ï¿½Ô‚ï¿½ï¿½Öï¿½ï¿½Äoï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½sï¿½ï¿½. */
+#define MORPHO_ERROR_MALLOC         (0x80000004)  /**< ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Aï¿½ï¿½ï¿½Pï¿½[ï¿½Vï¿½ï¿½ï¿½ï¿½ï¿½Gï¿½ï¿½ï¿½[. */
+#define MORPHO_ERROR_IO             (0x80000008)  /**< ï¿½ï¿½ï¿½oï¿½ÍƒGï¿½ï¿½ï¿½[. */
+#define MORPHO_ERROR_UNSUPPORTED    (0x80000010)  /**< ï¿½@ï¿½\ï¿½ï¿½ï¿½Tï¿½|ï¿½[ï¿½gï¿½ï¿½ï¿½Ä‚ï¿½ï¿½È‚ï¿½. */
+#define MORPHO_ERROR_NOTFOUND       (0x80000020)  /**< ï¿½ï¿½ï¿½ï¿½ï¿½ÎÛ‚ï¿½ï¿½ï¿½ï¿½Â‚ï¿½ï¿½ï¿½ï¿½È‚ï¿½ */
+#define MORPHO_ERROR_INTERNAL       (0x80000040)  /**< ï¿½ï¿½ï¿½Gï¿½ï¿½ï¿½[. */
+#define MORPHO_ERROR_UNKNOWN        (0xC0000000)  /**< ï¿½ï¿½ï¿½Lï¿½ÈŠOï¿½ÌƒGï¿½ï¿½ï¿½[. */
 
 #endif /* #ifndef MORPHO_ERROR_H */
