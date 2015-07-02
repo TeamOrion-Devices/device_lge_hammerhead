@@ -14,4 +14,4 @@
 # limitations under the License.
 #
 
-add_lunch_combo tesla_hammerhead-userdebug
+add_lunch_combo tipsy_hammerhead-userdebug

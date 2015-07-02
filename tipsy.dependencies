@@ -7,12 +7,6 @@
  },
  {
    "remote":      "github",
-   "repository":  "AD5GB/device_lge_hammerhead_tesla",
-   "target_path": "device/lge/hammerhead",
-   "branch":      "lp5.1"
- },
- {
-   "remote":      "github",
    "repository":  "TheMuppets/proprietary_vendor_broadcom",
    "target_path": "vendor/broadcom",
    "branch":      "cm-12.1"
