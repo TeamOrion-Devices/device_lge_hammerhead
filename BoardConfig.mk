@@ -113,13 +113,6 @@ BOARD_SEPOLICY_DIRS += \
 TARGET_KERNEL_CONFIG := wicked_hammerhead_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/hammerhead
 
-# ROM toolchain
-TARGET_GCC_VERSION := 4.9
-
-# Custom kernel toolchain
-KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
-KERNEL_TOOLCHAIN := "$(ANDROID_BUILD_TOP)/prebuilt/$(HOST_OS)-x86_64/toolchain/Linaro-4.9/bin/"
-
 # The list below is order dependent
 BOARD_SEPOLICY_UNION += \
        app.te \
