@@ -15,8 +15,6 @@
 #
 $(call inherit-product, device/lge/hammerhead/full_hammerhead.mk)
 
-PRODUCT_NAME := aosp_hammerhead
+PRODUCT_NAME := orion_hammerhead
 
-PRODUCT_PACKAGES += \
-    Launcher3
 
